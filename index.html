@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"></link>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <title>Trivia Game</title>
+    </head>
+    
+    <body>
+       <div class="container">
+           <div class='jumbotron'>
+               <div class="main-card">
+                   <h1>Art Trivia</h1>
+                   <h3>Test your knowledge of art history in 1 minute</h3>
+                   <button id="game-start">Start</button>
+               </div>
+</div>
+
+           <div class="row">
+               <div class="col-lg-12">
+                   <h4 id="timecount">Time allowed: 60 seconds</h4>
+                  <h5 id="result">Score:</h5>
+               </div><br><br>
+           </div>
+
+           <div id="question-block" class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h5 class="questions">Who painted Las Meninas?</h5>
+                                <div>
+                                    <input type="radio" id="choice1-1" name= "q1" value="Greco">
+                                    <label for="choice1-1">Domenikos Theotokopoulos</label>
+                                
+                                    <input type="radio" id="choice2-1" name= "q1" value="Zurbaran">
+                                    <label for="choice2-1">Francisco de Zurbarán</label>
+                                
+                                    <input type="radio" id="choice3-1" name= "q1" value="Velazquez">
+                                    <label for="choice3-1">Diego de Velázquez</label>
+                                  </div>
+
+                            <h5 class="questions">Who wrote the Realist Manifesto?</h5>
+                                <div>
+                                    <input type="radio" id="choice1-2" name="q2" value="Courbet">
+                                    <label for="choice1-2">Gustave Courbet</label>
+                                
+                                    <input type="radio" id="choice2-2" name="q2" value="Mallarme">
+                                    <label for="choice2-2">Stéphane Mallarmé</label>
+                                
+                                    <input type="radio" id="choice3-3" name="q2" value="Zola">
+                                    <label for="choice3-2">Émile Zola</label>
+                                  </div>
+
+                            <h5 class="questions">Who is considered one of the pioneers of Abstract Painting?</h5>
+                                <div>
+                                    <input type="radio" id="choice1-3" name="q3" value="Duchamp">
+                                    <label for="choice1-3">Marcel Duchamp</label>
+                                
+                                    <input type="radio" id="choice2-3" name="q3" value="Picasso">
+                                    <label for="choice2-3">Pablo Picasso</label>
+                                
+                                    <input type="radio" id="choice3-3" name="q3" value="Kandinsky">
+                                    <label for="choice3-3">Wassily Kandinsky</label>
+                                  </div>
+
+
+                            <h5 class="questions">Which one of the following artists helped shape the the Romantic Period?</h5>
+                                <div>
+                                    <input type="radio" id="choice1-4" name="q4" value="Giotto">
+                                    <label for="choice1-4">Giotto di Bondone</label>
+                                
+                                    <input type="radio" id="choice2-4" name="q4" value="Friedrich">
+                                    <label for="contactChoice2">Caspar David Friedrich</label>
+                                
+                                    <input type="radio" id="choice3-4" name="q4" value="Turner">
+                                    <label for="choice3-4">J. M. W. Turner</label>
+                                  </div>
+
+
+                            <h5 class="questions">The Renaissance is characterized by:</h5>
+                                <div>
+                                    <input type="radio" id="choice1-5" name="q5" value="religious">
+                                    <label for="choice1-5">The emphasis on religious themes</label>
+                                
+                                    <input type="radio" id="choice2-5" name="q5" value="perspective">
+                                    <label for="choice2-5">The development of perspective</label>
+                                
+                                    <input type="radio" id="choice3-5" name="q5" value="contrasts">
+                                    <label for="choice3-5">The development of light and dark contrasts</label>
+                                  </div>
+
+
+                            <h5 class="questions">Who is not considered a member of the Abstract Expressionists?</h5>
+                                <div>
+                                    <input type="radio" id="choice1-6" name="q6" value="Newman">
+                                    <label for="contactChoice1">Barnett Newman</label>
+                                
+                                    <input type="radio" id="choice2-6" name="q6" value="Rauschenberg">
+                                    <label for="choice2-6">Robert Rauschenberg</label>
+                                
+                                    <input type="radio" id="choice3-6" name="q6" value="Motherwell">
+                                    <label for="choice3-6">Robert Motherwell</label>
+                                  </div>
+
+
+
+                            <h5 class="questions">Who was a close collaborator of Pablo Picasso?</h5>
+                                <div>
+                                    <input type="radio" id="choice1-7" name="q7" value="Cezanne">
+                                    <label for="choice1-7">Paul Cézanne</label>
+                                
+                                    <input type="radio" id="choice2-7" name="q7" value="Braque">
+                                    <label for="choice2-7">Georges Braque</label>
+                                
+                                    <input type="radio" id="choice3-7" name="q7" value="Modigliani">
+                                    <label for="choice3-7">Amedeo Modigliani</label>
+                                  </div>
+
+
+                            <h5 class="questions">Vincent Van Gogh became a painter because he couldn't become a:</h5>
+                                <div>
+                                    <input type="radio" id="choice1-8" name="q8" value="Sculptor">
+                                    <label for="choice1-8">Sculptor</label>
+                                
+                                    <input type="radio" id="choice2-8" name="q8" value="Broker">
+                                    <label for="choice2-8">Stock Broker</label>
+                                
+                                    <input type="radio" id="choice3-8" name="q8" value="Preacher">
+                                    <label for="choice3-8">Preacher</label>
+                                  </div>
+
+
+                            <h5 class="questions">The use of colour as an independent means was not a priority for:</h5>
+                                <div>
+                                    <input type="radio" id="choice1-9" name="q9" value="Fauvists">
+                                    <label for="choice1-9">The Fauvists</label>
+                                
+                                    <input type="radio" id="choice2-9" name="q9" value="Nabis">
+                                    <label for="choice2-9">The Nabis</label>
+                                
+                                    <input type="radio" id="choice3-9" name="q9" value="Pre-Raphaelites">
+                                    <label for="choice3-9">The Pre-Raphaelites</label>
+                                  </div>
+
+
+
+
+
+                        </div>
+                    </div>
+           </div>
+
+           
+
+
+
+
+       </div>
+        
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+        <script src="assets/javascript/app.js"></script>
+    </body>
+</html>
