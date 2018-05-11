@@ -36,6 +36,9 @@ $(document).ready(function(){
     if (this.value === answerCode[0]) {
         score ++
         document.getElementById("result").innerHTML = "Correct answers: " + score + " out of 9";
+    } else { 
+        score = 0;
+        document.getElementById("result").innerHTML = "Correct answers: " + score + " out of 9";
     }
   
   
