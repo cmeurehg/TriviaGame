@@ -26,45 +26,45 @@ $(document).ready(function(){
     },
 
     {
-        question: "Who painted Las Meninas?",
-        answer: "Diego de Velázquez",
-        decoy1: "Francisco de Zurbarán",
-        decoy2: "El Greco"
+        question: "Which one of the following artists helped shape the Romantic Period?",
+        answer: "Caspar David Friedrich",
+        decoy1: "Giotto di Bondone",
+        decoy2: "J.M.W. Turner"
     },
 
     {
-        question: "Who painted Las Meninas?",
-        answer: "Diego de Velázquez",
-        decoy1: "Francisco de Zurbarán",
-        decoy2: "El Greco"
+        question: "The Renaissance is characterized by:",
+        answer: "The development of perspective",
+        decoy1: "The emphasis on religous themes",
+        decoy2: "The development of light and dark contrasts"
     },
 
     {
-        question: "Who painted Las Meninas?",
-        answer: "Diego de Velázquez",
-        decoy1: "Francisco de Zurbarán",
-        decoy2: "El Greco"
+        question: "Who is not considered a member of the Abstract Expressionists?",
+        answer: "Robert Rauschenberg",
+        decoy1: "Barnett Newman",
+        decoy2: "Robert Motherwell"
     },
 
     {
-        question: "Who painted Las Meninas?",
-        answer: "Diego de Velázquez",
-        decoy1: "Francisco de Zurbarán",
-        decoy2: "El Greco"
+        question: "Who was a close collaborator of Pablo Picasso?",
+        answer: "Georges Braque",
+        decoy1: "Amedeo Modigliani",
+        decoy2: "Paul Cézanne"
     },
 
     {
-        question: "Who painted Las Meninas?",
-        answer: "Diego de Velázquez",
-        decoy1: "Francisco de Zurbarán",
-        decoy2: "El Greco"
+        question: "Vincent van Gogh became a painter because he could not become a:",
+        answer: "Preacher",
+        decoy1: "Stock broker",
+        decoy2: "Sculptor"
     },
 
     {
-        question: "Who painted Las Meninas?",
-        answer: "Diego de Velázquez",
-        decoy1: "Francisco de Zurbarán",
-        decoy2: "El Greco"
+        question: "The use of colour as an independent means was not a priority for:",
+        answer: "The Pre-Raphaelites",
+        decoy1: "The Fauvists",
+        decoy2: "The Nabis"
     }
 
 ];
@@ -78,7 +78,8 @@ $(document).ready(function(){
             var options = $("<div>");
             options.attr("id=option-set");
             options.append(test[i].answer + test[i].decoy1 + test[i].decoy2);
-            $("#question-card").append(options); 
+            $("#question-card").append(options);
+            
             break;
             
             
